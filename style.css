@@ -2,25 +2,52 @@
 padding: 0;  
 margin: 0;  
 box-sizing: border-box;  
+
+font-family: sans-serif;
 }  
 .main-container {
     display: grid;
     grid-template-columns: 1fr 3fr;
     grid-template-rows: 1fr 3fr;
+    height: 100vh;
 }
 
 .sidebar {
     display: grid;
-    grid-template-rows: 1fr 3fr 2fr;
-    gap:20px;
+    grid-template-rows: 1fr 3fr 2fr 6fr;
+    row-gap:50px;
 
     background-color:rgb(16, 159, 207);
-
+    height: 100%;
     grid-area: 1/1/3/2;
 }
 .dashboard, .tabs, .settings {
+    display: grid;
     margin-left: 20px;
 }
-.icons {
+.icon {
     margin-left: 10px;
 }
+
+.dashboard {
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 4fr;
+
+    color: white;
+    margin-top: 20px;
+}
+.tab {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 6fr;
+
+    font-size: 21px;
+    color: white;
+}
+
+.tabs, .settings {
+    row-gap: 15px;
+}
+
