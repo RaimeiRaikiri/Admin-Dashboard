@@ -5,12 +5,15 @@ box-sizing: border-box;
 
 font-family: sans-serif;
 }  
+
 .main-container {
     display: grid;
     grid-template-columns: 1fr 3fr;
     grid-template-rows: 1fr 3fr;
     height: 100vh;
 }
+
+/* Side bar */
 
 .sidebar {
     display: grid;
@@ -51,3 +54,36 @@ font-family: sans-serif;
     row-gap: 15px;
 }
 
+
+/* Nav bar */
+
+.navbar {
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+}
+.tophalf {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.rightside {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    gap: 30px;
+}
+.leftside {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    gap:15px;
+}
+input {
+    width: 600px;
+    height: 25px;
+    border: none;
+    background-color: rgb(224, 224, 224);;
+    border-radius: 16px;
+}
