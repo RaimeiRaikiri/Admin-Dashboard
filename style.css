@@ -133,3 +133,48 @@ button {
     font-weight: 700;
 }
 
+/* Projects section */
+
+.projects{
+    display: flex;
+    flex-direction: column;
+
+}
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(300px,1fr));
+    grid-auto-rows: 300px;
+    gap:40px;
+}
+.card {
+    display: grid;
+    grid-template-columns: 1fr 15fr;
+
+    border-radius: 12px;
+
+    background-color: white;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    margin-left: 10px;
+}
+.yellow-area {
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+
+    background-color: rgb(240,179,41);
+    height: 100%;
+    width: 10px;
+}
+.card-area {
+    display: grid;
+    grid-row: 1fr 1fr;
+    align-items: center;
+}
+.icon-area {
+    display: grid;
+    grid-template-columns: 6fr 2fr 2fr 2fr;
+}
+.card-text > p {
+    color: rgb(101,101,101);
+}
